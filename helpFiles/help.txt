@@ -1,0 +1,24 @@
+--- HELP
+-- enter 'e' to establish connection with robot via port, you will be asked provide right after
+    (COM3, COM4, COM5, etc...), and baudrate on which works arduino
+-- enter 'c' to send a command:
+    1) enter 'm' to make robot pass distance, specified right afterwords, between -200 and 200
+	f.e. m -20
+    2) enter 'r' to turn robot for an angle, specified right afterwords, between -200 and 200
+	f.e. r 30
+    3) enter 'v' to set the speed for the robot, then specify the speed, between 0 and 254
+	f.e. v 250
+    4) enter 'b' to read the robot's sonar
+    5) enter 'i' to read robot's IR
+    6) enter 'P' to set proportional coefficient for PID algorithm
+    6) enter 'I' to set integral coefficient for PID algorithm
+    6) enter 'D' to set derivative coefficient for PID algorithm
+    7) enter 'g' to start PID algorithm for following a line
+    8) enter 'S' to stop PID algorithm
+    9) enter 'back', to go back to the menu
+-- enter 'h' to see server-log history
+-- enter 's' to save server-log into a file, and then provide a file name
+-- enter 'quit' to quit
+
+--Pocket form:
+[{command_char}{magnitude}{check_sum}{end_marker}]
